@@ -9,7 +9,10 @@ public class Valtio {
     public int valtionKuvaus; //valtion bonukset ja miinukset?
     public int muuttovirta; //montako kansalaista muuttaa kerralla
     public int hyotykuorma; //paljonko tavaraa maasta voidaan tuoda kerralla
-    public int[] suhteet; //kuinka paljon tykkää tai ei tykkää muista valtioista (-100...100)
+    public int[] suhteet; //kuinka paljon tykkää tai ei tykkää muista valtioista
+                          //0...30 vihu, 31...69 neutraali, 70-100 liittolainen
+    public boolean kauttakulku; //saako maan alueelle tulla neutraalina
+    public boolean liittokulku; //onko liittolaisilla vapaa kulku
     
     //valtion bonukset ja miinukset, arvot väliltä 0.85...1.15
     public double rakennustaito;
@@ -18,6 +21,7 @@ public class Valtio {
     public double halpisruokataito;
     public double normaaliruokataito;
     public double luksusruokataito;
+    public double alkoholikulutus;
     public double alkoholitaito;
     public double farmasia;
     public double energiateknologia;
@@ -35,6 +39,7 @@ public class Valtio {
     public double diplomatia;
     public double talous;
     public double ihmisoikeudet;
+    public double sosiaalisuus;
     
     //nimistö
     public String[] kaupunginNimetAlku; //kaupungin nimen alku otetaan tästä ja

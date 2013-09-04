@@ -10,7 +10,6 @@ public abstract class Kohde {
     public static String tyyppiNimi; //tyypin nimi, esim "alustehdas"
     public static String kuvaus; //tyypin kuvaus, esim "valmistaa aluksia"
     public static int tehdaspaino; //tyypin alkupaino ilman kuormaa ja lisäosia
-    public static int tehdashinta; //tyypin alkuhinta ilman kuormaa ja lisäosia
     public static int tehdasmetalli; //tyypin vaatima metalli ilman kuormaa ja lisäosia
     public static int tehdassuojaus; //tyypin kestävyys ilman kuormaa ja lisäosia
     public static int tehdasmiehitys; //montako ihmistä mahtuu ilman kuormaa ja lisäosia
@@ -19,15 +18,46 @@ public abstract class Kohde {
     public int id; //tunnusnumero jolla kohde tunnistetaan
     public String nimi; //tunnusnimi jolla kohde tunnetaan 
     public ihmiset.Valtio valtio; //valtio jolle kohde kuuluu
-    public int suojaus; //kohteen kokonaissuojaus (tehdassuojaus + lisäosat)
-    public int miehityskapasiteetti; //montako ihmistä mahtuu
+    public double suojaus; //kohteen kokonaissuojaus (tehdassuojaus + lisäosat)
+    public double miehityskapasiteetti; //montako ihmistä mahtuu
             
     //Tilannetiedot
-    public int korkeus; //korkeus (vaikuttaa suoraan tutkahavaintoihin)
-    public double pituutta; //koordinaattipituus, negatiivinen W, positiivinen E
-    public double leveytta; //koordinaattileveys, negatiivinen S, positiivinen N
+    public double korkeus; //korkeus (vaikuttaa suoraan tutkahavaintoihin)
+    public int pituutta; //koordinaattipituus, negatiivinen W, positiivinen E
+    public int leveytta; //koordinaattileveys, negatiivinen S, positiivinen N
+    public int pituusmetrit; //sijainti ruudun sisällä metrin tarkkuudella
+    public int leveysmetrit; //sijainti ruudun sisällä metrin tarkkuudella
     public int kunto; //kunto prosentteina, vaikuttaa toimintakykyyn
     public int kokemus; //kokemus vaikuttaa siihen kuinka tehokas kohde on työssään
     public int miehitys; //montako ihmistä sisällä tällä hetkellä
+    public int haavoittuneita; //montako haavoittunutta (<=miehitys)
     public boolean tekeeJotain; //tekeekö jotain vai idlaako
 }
+
+/*
+tyyppiNumero;
+tyyppiNimi;
+kuvaus;
+tehdaspaino;
+tehdasmetalli;
+tehdassuojaus;
+tehdasmiehitys;
+    
+    
+id;
+nimi;
+valtio;
+suojaus;
+miehityskapasiteetti;
+            
+        
+korkeus;
+pituutta;
+leveytta;
+pituusmetrit;
+leveysmetrit;
+kunto;
+kokemus;
+miehitys;
+tekeeJotain;
+ * */

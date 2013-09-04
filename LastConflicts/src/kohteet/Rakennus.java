@@ -8,25 +8,24 @@ package kohteet;
  */
 public abstract class Rakennus extends Kohde {
     //välttämättömät tuotteet
-    public int metallikulutus; //kuinka paljon metallia kuluu tunnissa
-    public int ilmakulutus; //kuinka paljon ilmaa kuluu tunnissa
-    public int vesikulutus; //kuinka paljon vettä kuluu tunnissa
+    public double metallikulutus; //kuinka paljon metallia kuluu tunnissa
+    public double ilmakulutus; //kuinka paljon ilmaa kuluu tunnissa
+    public double vesikulutus; //kuinka paljon vettä kuluu tunnissa
     
         //ruoka kulutetaan niin että ensin käytetään luksusruoka, sitten normaali ja halpis
-        public int halpisruokakulutus; //kuinka paljon halpisruokaa kuluu tunnissa
-        public int normaaliruokakulutus; //kuinka paljon normaaliruokaa kuluu tunnissa
-        public int luksusruokakulutus; //kuinka paljon luksusruokaa kuluu tunnissa
+        public double halpisruokakulutus; //kuinka paljon halpisruokaa kuluu tunnissa
+        public double normaaliruokakulutus; //kuinka paljon normaaliruokaa kuluu tunnissa
+        public double luksusruokakulutus; //kuinka paljon luksusruokaa kuluu tunnissa
     
     //sekundäärituotteet
-    public int alkoholikulutus; //kuinka paljon alkoholia kuluu tunnissa
-    public int laakekulutus; //kuinka paljon lääkkeitä kuluu tunnissa
-    public int teho; //tällä lasketaan paljonko polttoainetta kuluu tunnissa
+    public double alkoholikulutus; //kuinka paljon alkoholia kuluu tunnissa
+    public double laakekulutus; //kuinka paljon lääkkeitä kuluu tunnissa
     public int siemenkulutus; //kuinka paljon siemeniä kuluu tunnissa
     
     //tilaan liittyvät
     public boolean aktiivinen; //onko rakennus aktiivinen vai ei
     
-    public abstract void asetaTehtava();
+    public abstract void asetaTehtava(int i);
     
     public abstract void idlaa();
     
@@ -38,3 +37,24 @@ public abstract class Rakennus extends Kohde {
     
     public abstract void inventaario();
 }
+
+/*
+ 
+ //välttämättömät tuotteet
+    metallikulutus;
+    ilmakulutus;
+    vesikulutus;
+    
+        //ruoka kulutetaan niin että ensin käytetään luksusruoka, sitten normaali ja halpis
+        halpisruokakulutus;
+        normaaliruokakulutus;
+        luksusruokakulutus;
+    
+    //sekundäärituotteet
+    alkoholikulutus;
+    laakekulutus;
+    siemenkulutus;
+    
+    //tilaan liittyvät
+    aktiivinen;
+ */

@@ -26,3 +26,16 @@ public abstract class Alus {
     
     public abstract void siirry(String kaupunki);
 }
+
+/*
+    moottori;
+    cruiseNopeus;
+    ase;
+    ohjuskapasiteetti;
+    ohjukset;
+    rcsnopeus;
+    
+    nopeus;
+    suunta;
+    tukikohta;
+ */

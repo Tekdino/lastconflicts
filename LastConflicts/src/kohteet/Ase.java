@@ -23,3 +23,21 @@ public abstract class Ase {
     
     public abstract void lopetaAmpuminen();
 }
+
+/*
+ 
+    tyyppiNumero;
+    tyyppiNimi;
+    tyyppiKuvaus;
+    
+    
+    ammuskapasiteetti;
+    ammuksia;
+    ammuksenpaino;
+    tuhovoima;
+    tuholaajuus;
+    latausaika;
+    kantomatka;
+    ammusnopeus;
+ 
+ */

@@ -8,3 +8,9 @@ public class Polttoaine {
     public String tyyppiNimi; //polttoainetyypin nimi
     public String tyyppiKuvaus; //polttoainetyypin kuvaus
 }
+
+/*
+    tyyppiNumero;
+    tyyppiNimi;
+    tyyppiKuvaus;
+ */

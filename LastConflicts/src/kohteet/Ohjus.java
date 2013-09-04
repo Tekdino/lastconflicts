@@ -14,3 +14,12 @@ public abstract class Ohjus extends Kohde {
     
     public abstract void tuhoudu();
 }
+
+/*
+ 
+    moottori;
+    nopeus;
+    suunta;
+    tuhovoima;
+    tuholaajuus;
+ */

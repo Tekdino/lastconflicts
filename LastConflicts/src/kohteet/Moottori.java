@@ -14,3 +14,11 @@ public abstract class Moottori {
     
     public abstract void sammuta();
 }
+
+/*
+    tyyppiNumero;
+    tyyppiNimi;
+    tyyppiKuvaus;
+    polttoaine;
+    teho;
+ */
