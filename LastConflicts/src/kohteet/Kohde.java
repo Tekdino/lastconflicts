@@ -31,7 +31,18 @@ public abstract class Kohde {
     public int kokemus; //kokemus vaikuttaa siihen kuinka tehokas kohde on työssään
     public int miehitys; //montako ihmistä sisällä tällä hetkellä
     public int haavoittuneita; //montako haavoittunutta (<=miehitys)
+    public int laakareita; //montako lääkäriä sisällä tällä hetkellä
     public boolean tekeeJotain; //tekeekö jotain vai idlaako
+    public int tehtava;
+    public String raportti;
+    public String inventaario;
+
+    public abstract void sekunti(int i);
+    
+    public abstract void tunti(int i);
+    
+    public abstract void vuorokausi(int i);
+
 }
 
 /*
@@ -59,5 +70,10 @@ leveysmetrit;
 kunto;
 kokemus;
 miehitys;
+haavoittuneita;
+laakareita;
 tekeeJotain;
+tehtava;
+raportti;
+inventaario;
  * */

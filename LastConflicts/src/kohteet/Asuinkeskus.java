@@ -43,7 +43,8 @@ public class Asuinkeskus extends Rakennus {
         kunto = 100;
         kokemus = 0;
         miehitys = 0;
-        tekeeJotain = false;
+        tekeeJotain = true;
+        tehtava = 1;
         
         //Rakennus-kentät
         
@@ -67,26 +68,54 @@ public class Asuinkeskus extends Rakennus {
     }
 
     public void asetaTehtava(int i) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (i == 1) {
+            tehtava = 1;
+            // TODO sallii lisääntymisen
+        }
+        else if (i == 2) {
+            tehtava = 2;
+            // TODO ei salli lisääntymistä
+        }
     }
 
     public void idlaa() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        tekeeJotain = false;
+        //ei vaikuta mihinkään
     }
 
     public void aktivoi() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        aktiivinen = true;
+        //ei vaikuta mihinkää
     }
 
     public void deaktivoi() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        aktiivinen = true;
+        //ei vaikuta koska asuinkeskusta ei voi deaktivoida, sen voi toki tyhjentää
+        //ihmisist jolloi se ei kuluta mitää
     }
 
     public void raportoi() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if (haavoittuneita > 0) {
+        raportti = "Population: " + miehitys + "\nAge of city: " + ika;
+        }
+        else {
+            raportti = "Population: " + miehitys + "\nInjured: " + haavoittuneita + "\nAge of city: " + ika;
+        }
     }
 
     public void inventaario() {
+        inventaario = ""; //TODO inventaarioo joku järkevä listaus joka näyttää myös paljon jäljel
+    }
+
+    public void sekunti(int i) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void tunti(int i) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void vuorokausi(int i) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
