@@ -104,6 +104,7 @@ public class Asuinkeskus extends Rakennus {
     }
 
     public void inventaario() {
+        
         inventaario = ""; //TODO inventaarioo joku järkevä listaus joka näyttää myös paljon jäljel
     }
 
