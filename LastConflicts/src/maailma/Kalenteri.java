@@ -1,4 +1,4 @@
-package lastconflicts;
+package maailma;
 
 /**
  * Sisältää kentät pelin ajanhallintaan ja mahdollisesti laskureita ja/tai

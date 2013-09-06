@@ -18,7 +18,12 @@ public class Geologia {
         }
     }
     
+    /**
+     * Simuloitu asteroidipommitusten vaikutus pinnanmuotoihin
+     * @param maara montako asteroidia simuloidaan
+     */
     public void asteroidiPommitus(int maara) {
+        // TODO Tarvitaan kunnollisempi versio! Laajemmat kraaterit ja reunavallit mukaan!
         int iskettyX;
         int iskettyY;
         int iskettySyvyys;
