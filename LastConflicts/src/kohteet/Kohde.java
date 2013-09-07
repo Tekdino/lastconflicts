@@ -37,11 +37,11 @@ public abstract class Kohde {
     public String raportti;
     public String inventaario;
 
-    public abstract void sekunti(int i);
+    public abstract void sekunti(); //mitä tapahtuu kun sekunti vaihtuu
     
-    public abstract void tunti(int i);
+    public abstract void tunti(); //mitä tapahtuu kun tunti vaihtuu
     
-    public abstract void vuorokausi(int i);
+    public abstract void vuorokausi(); //mitä tapahtuu kun vuorokausi vaihtuu
 
 }
 
