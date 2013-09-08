@@ -42,6 +42,8 @@ public abstract class Kohde {
     public abstract void tunti(); //mitä tapahtuu kun tunti vaihtuu
     
     public abstract void vuorokausi(); //mitä tapahtuu kun vuorokausi vaihtuu
+    
+    public abstract void vuosi(); //mitä tapahtuu kun vuosi vaihtuu
 
 }
 

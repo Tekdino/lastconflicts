@@ -15,7 +15,7 @@ public abstract class Rakennus extends Kohde {
     public double vesi;
     public double vesikulutus; //kuinka paljon vettä kuluu tunnissa
     
-        //ruoka kulutetaan niin että ensin käytetään luksusruoka, sitten normaali ja halpis
+        //ruoka
         public double halpisruoka;
         public double halpisruokakulutus; //kuinka paljon halpisruokaa kuluu tunnissa
         public double normaaliruoka;

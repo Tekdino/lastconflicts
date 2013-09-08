@@ -7,6 +7,7 @@ public class Valtio {
     public int valtioID; //numero jolla valtio tunnistetaan
     public int valtioNimi; //valtion nimi
     public int valtionKuvaus; //valtion bonukset ja miinukset?
+    public int kansalaisuus; //miten kansalaisuus sanotaan, esim englantilainen
     public int muuttovirta; //montako kansalaista muuttaa kerralla
     public int hyotykuorma; //paljonko tavaraa maasta voidaan tuoda kerralla
     public int[] suhteet; //kuinka paljon tykkää tai ei tykkää muista valtioista
