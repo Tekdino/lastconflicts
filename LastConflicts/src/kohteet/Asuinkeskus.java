@@ -316,9 +316,26 @@ public class Asuinkeskus extends Rakennus {
         if (laaketuholaskuri>0 && laakareita >0) { //lääkkeet loppu ja lääkäreitä paikalla
             int kuolee = arpoja.nextInt(haavoittuneita/3); //0-33% haavottuneista kuolee
             haavoittuneita-=kuolee;
+            int parantuu = arpoja.nextInt(haavoittuneita/3); //0-33% haavottuneista parantuu
+            miehitys+=parantuu;
+            haavoittuneita-=parantuu;
         }
         else if (laaketuholaskuri>0 && laakareita==0) { //lääkkeet loppu eikä lääkäreitä
             int kuolee = arpoja.nextInt(haavoittuneita); //0-100% haavottuneista kuolee
+            haavoittuneita-=kuolee;
+        }
+        else if (haavoittuneita>0 && laaketuholaskuri==-1 && laakareita>0) { //lääkkeitä ja lääkäreitä on
+            int parantuu = arpoja.nextInt(haavoittuneita); //0-100% haavottuneista paranee
+           miehitys+=parantuu;
+           haavoittuneita-=parantuu;
+           int kuolee = arpoja.nextInt(haavoittuneita/5); //0-20% kuolee
+           haavoittuneita-=kuolee;
+        }
+        else if (haavoittuneita>0 && laaketuholaskuri==-1 && laakareita==0) { //lääkkeitä on mut ei lääkäreitä
+            int parantuu = arpoja.nextInt(haavoittuneita/5); //0-20% paranee
+            miehitys+=parantuu;
+            haavoittuneita-=parantuu;
+            int kuolee = arpoja.nextInt(haavoittuneita/3); //0-33% kuolee
             haavoittuneita-=kuolee;
         }
     }
@@ -328,6 +345,7 @@ public class Asuinkeskus extends Rakennus {
         if (ika>15) {
             int syntyy = (int) ((miehitys*0.04)*valtio.sosiaalisuus);
             if (syntyy < 2) { syntyy = 2; } //vähintää kaks syntyy
+            miehitys+=syntyy;
             vuosiviesti = "Happy " + ika + "th year of the city of " + nimi + "! " + syntyy +
                     " kids who were born here, have now come to age and are joining the crew!";
         }
