@@ -5,10 +5,10 @@ package maailma;
  */
 public class Ruutu {
     //geologia
-    public int korkeus = 250; //korkeus nollatasosta
+    public int korkeus = 6000; //korkeus nollatasosta
     public int metalli; //paljonko ruudussa on metallia
     public int valtioID; //mille valtiolle kuuluu, 0=ei millekkään
             
     //laskettavat
-    public int celsius; //ruudun lämpötila
+    public int kelvin; //ruudun lämpötila
 }
